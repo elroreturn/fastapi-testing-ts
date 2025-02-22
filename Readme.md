@@ -7,7 +7,18 @@ This project is a simple example of how to use Playwright to automate testing a 
 - Node.js (v16.0.0 or higher)
 - npm (v10.0.0 or higher)
 - Playwright (v1.44.0 or higher)
-- FastAPI (v0.114.0 or higher)
+- FastAPI (v0.114.0 or higher) [FastAPI](docs/FastApi.md)
+
+
+## .env File template
+```code
+ENV=
+WEB_URL=
+API_URL=
+
+MAIN_USER=
+MAIN_USER_PWD=
+```
 
 ## Installation
 
@@ -43,6 +54,5 @@ To view the test results, run the following command:
 ```bash
 npm run report
 ```
-
 
 
