@@ -1,0 +1,46 @@
+{
+  "name": "fastapi-testing-ts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:debug": "npx playwright test --debug",
+    "test:ui": "npx playwright test --ui",
+    "test:api": "npx playwright test tests/api/",
+    "test:e2e": "npx playwright test tests/e2e/",
+    "test:chrome": "npx playwright test --project=chromium",
+    "test:firefox": "npx playwright test --project=firefox",
+    "test:webkit": "npx playwright test --project=webkit",
+    "test:parallel": "npx playwright test --workers=4",
+    "report": "npx playwright show-report",
+    "report:html": "npx playwright show-report playwright-report",
+    "codegen": "npx playwright codegen",
+    "codegen:url": "npx playwright codegen http://localhost:5173",
+    "install:browsers": "npx playwright install",
+    "install:deps": "npx playwright install-deps",
+    "trace:view": "npx playwright show-trace",
+    "format": "npx prettier --write ."
+  },
+  "keywords": [
+    "playwright",
+    "automation",
+    "testing",
+    "e2e",
+    "api-testing",
+    "typescript",
+    "fastapi"
+  ],
+  "author": "Rodrigo Antognazza",
+  "license": "ISC",
+  "description": "Playwright testing for fastapi using TypeScript",
+  "devDependencies": {
+    "@playwright/test": "^1.50.1",
+    "@types/node": "^22.13.4",
+    "dotenv": "^16.4.7",
+    "prettier": "^3.5.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
